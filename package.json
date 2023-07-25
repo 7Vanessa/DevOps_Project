@@ -1,0 +1,24 @@
+{
+  "name": "test-webapp-simple",
+  "version": "1.0.0",
+  "description": "A simple repo that has the smallest dependencies for webapp/ static webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kintohub/test-webapp-simple.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kintohub/test-webapp-simple/issues"
+  },
+  "homepage": "https://github.com/kintohub/test-webapp-simple#readme",
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  }
+}
