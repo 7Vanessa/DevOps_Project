@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
     end
 
     # Provision Jenkins VM
-    jenkins.vm.provision "shell", path: "setup_jenkins.sh", privileged: false
+    jenkins.vm.provision "shell", path: "provision_jenkins.sh", privileged: false
   end
 
   config.vm.define "slave1" do |slave1|
@@ -26,7 +26,7 @@ Vagrant.configure("2") do |config|
     end
 
     # Provision Slave1 VM
-    slave1.vm.provision "shell", path: "setup_jenkins.sh", privileged: false
+    slave1.vm.provision "shell", path: "provision_slave1.sh", privileged: false
   end
 
   config.vm.define "slave2" do |slave2|
@@ -39,7 +39,6 @@ Vagrant.configure("2") do |config|
     end
 
     # Provision Slave2 VM
-    slave2.vm.provision "shell", path: "setup_jenkins.sh", privileged: false
+    slave2.vm.provision "shell", path: "provision_slave2.sh", privileged: false
   end
-  
 end
