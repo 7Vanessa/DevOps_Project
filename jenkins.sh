@@ -18,7 +18,7 @@ pipeline {
             agent { label 'jenkins' } // Use the 'jenkins' node for this stage
             steps {
                 // Build the static website
-                dir('./') {
+                dir('./app/') {
                     sh 'npm install'
                     sh 'npm run build'
                 }
